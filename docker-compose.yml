@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+
+ 
+    server:
+        # image: electromontazh/api-gateway:latest
+        build: ./
+        ports:
+            - 7001:8000
+        environment:
+            SERVICE_NAME: "s3"
+            REGION_NAME: "auto"
+            ENDPOINT_URL: "https://storage.yandexcloud.net"
+            AWS_ACCESS_KEY_ID: "YCAJEFZPqq6xk_QqtnPUfPwu_"
+            AWS_SECRET_ACCESS_KEY: "YCNpO9ooSncf_C_IF3TyaccHOTc_1Ym2bQTZnojt"
+            BUCKET_NAME: "electromontazh"
