@@ -4,8 +4,8 @@ services:
 
  
     server:
-        # image: electromontazh/api-gateway:latest
-        build: ./
+        image: electromontazh/media-ms:latest
+        # build: ./
         ports:
             - 7001:8000
         environment:
